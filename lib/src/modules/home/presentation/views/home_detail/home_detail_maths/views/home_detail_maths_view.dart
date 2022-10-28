@@ -21,6 +21,7 @@ class HomeDetailMathsView extends StatelessWidget {
           return true;
         }
       },
+      
       child: Scaffold(
         appBar: AppBar(
           title: const Text(AppText.homeAppBarText),
