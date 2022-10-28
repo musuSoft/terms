@@ -1,0 +1,44 @@
+name: terms
+description: My new Terms app
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: 3.3.3
+
+dependencies:
+  bloc: ^8.1.0
+  cloud_firestore: ^3.5.1
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  firebase_auth: ^3.11.2
+  firebase_core: ^1.24.0
+  firebase_storage: ^10.3.11
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+  flutter_localizations:
+    sdk: flutter
+  flutter_native_splash: ^2.2.11
+  flutter_svg: ^1.1.5
+  fluttertoast: ^8.1.1
+  get_it: ^7.2.0
+  go_router: ^5.1.0
+  google_fonts: ^3.0.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.17.0
+  path_provider: ^2.0.11
+  share_plus: ^4.5.3
+
+dev_dependencies:
+  bloc_test: ^9.1.0
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  very_good_analysis: ^3.1.0
+
+flutter:
+  uses-material-design: true
+  generate: true
