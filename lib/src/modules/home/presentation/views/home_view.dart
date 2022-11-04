@@ -17,7 +17,9 @@ class HomeView extends StatelessWidget {
     return WillPopScope(
       onWillPop: () async {
         if (DateTime.now().difference(lastTimeBackbuttonWasClicked) >=
-            const Duration(seconds: 2)) {
+            const Duration(
+              seconds: 2,
+            )) {
           context.go('/');
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
