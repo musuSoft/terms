@@ -26,4 +26,6 @@ class AppText {
 
   //? Settings Page
   static const String settingTitle = 'Бул баракчада оңдоолор болуп жатат';
+  //! Error
+  static const String error = 'Error';
 }

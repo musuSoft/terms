@@ -4,6 +4,6 @@ export 'data/models/home_model.dart';
 export 'data/repositories/home_repo.dart';
 
 // export presentation
-export 'presentation/logic/home_cubit.dart';
+export 'presentation/logic/home_bloc.dart';
 export 'presentation/views/home_page.dart';
 export 'presentation/views/home_view.dart';

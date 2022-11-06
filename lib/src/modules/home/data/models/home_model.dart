@@ -1,3 +1,6 @@
+HomeModel authFromJson(Map<String, dynamic> docMap) =>
+    HomeModel.fromJson(docMap);
+
 class HomeModel {
   HomeModel({
     this.nameTerm,
