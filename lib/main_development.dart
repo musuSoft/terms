@@ -9,5 +9,6 @@ import 'package:terms/bootstrap.dart';
 import 'package:terms/src/app/app.dart';
 
 void main() {
+  
   bootstrap(() => const App());
 }
