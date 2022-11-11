@@ -7,7 +7,9 @@
 
 import 'package:terms/bootstrap.dart';
 import 'package:terms/src/app/app.dart';
+import 'package:terms/src/locator.dart' as di;
 
-void main() {
-  bootstrap(() => const App());
+void main() async {
+  await di.init();
+  await bootstrap(() => const App());
 }
