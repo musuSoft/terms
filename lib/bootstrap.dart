@@ -10,9 +10,9 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
-import 'package:terms/src/locator.dart' as di;
 
 class AppBlocObserver extends BlocObserver {
+  
   @override
   void onChange(BlocBase<dynamic> bloc, Change<dynamic> change) {
     super.onChange(bloc, change);
@@ -27,15 +27,26 @@ class AppBlocObserver extends BlocObserver {
 }
 
 Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
+
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
   Bloc.observer = AppBlocObserver();
-  await di.init();
+
 
   await runZonedGuarded(
-    () async => runApp(await builder()),
+    
+    () async {
+      // ignore: deprecated_member_use
+      await BlocOverrides.runZoned(
+        () async => runApp(
+          await builder(),
+        ),
+      );
+
+    },
+    
     (error, stackTrace) => log(error.toString(), stackTrace: stackTrace),
   );
 }
