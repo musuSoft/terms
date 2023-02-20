@@ -34,6 +34,7 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
 
   Bloc.observer = AppBlocObserver();
 
+  // await di.init();
 
   await runZonedGuarded(
     

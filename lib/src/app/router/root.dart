@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:terms/src/app/router/destinations.dart' as my_des;
-import 'package:terms/src/modules/modul.dart';
 
 class RootLayout extends StatelessWidget {
   const RootLayout({
